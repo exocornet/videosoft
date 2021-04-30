@@ -345,6 +345,10 @@ body {
   font-size: 10px;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   max-width: 1200px;
   padding: 0 20px;
@@ -368,7 +372,12 @@ body {
 .header a:hover {
   color: #FF6263;
 }
+.header__wrapp-preview {
+  display: flex;
+  margin-top: 200px;
+}
 
+/* --Menu */
 .menu__link {
   font-style: normal;
   font-weight: 600;
@@ -377,4 +386,55 @@ body {
 }
 .menu__link:last-child {
   margin-right: 0;
+}
+
+/* --Phone */
+.phone {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.phone__tel {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6em;
+}
+.phone__req-call {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.preview-info {
+  color: #ffffff;
+  width: 50%;
+}
+.preview-info__heading {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 6.4em;
+  margin: 0 0 40px;
+}
+.preview-info__descript {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6em;
+  line-height: 1.8;
+  margin: 0 0 50px;
+}
+.preview-info__button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6em;
+  color: #ffffff;
+  background: #FF3E3F;
+  border: 0;
+  cursor: pointer;
+  padding: 20px 88px;
+}
+.preview-info__button:hover {
+  background: #E52627;
+}
+.preview-info__button:active {
+  background: #FF6263;
 }
