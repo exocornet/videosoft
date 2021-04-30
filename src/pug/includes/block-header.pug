@@ -1,21 +1,8 @@
 header.header
-  .container
 
-    .header__wrapp-link
-      a(href="/")
-        img(src="/images/logo.jpg" alt="Логотип компании")
-      nav.menu
-        a(href="#").menu__link Видеорегистраторы
-        a(href="#").menu__link Videosoft platform
-        a(href="#").menu__link Контакты
-      .phone
-        a(href="tel:89997450122").phone__tel 8 999 745 01 22
-        a(href="#").phone__req-call Заказать звонок
 
-    .header__wrapp-preview
-      .preview-info
-        h1.preview-info__heading Цифровизация полевых сотрудников
-        p.preview-info__descript Видеософт - это профессиональная RND российская компания, занимающаяся разработкой программно-аппаратных решений с использованием искусственного интеллекта для систем безопасности общественного порядка и коммерческих заказчиков.
-        button.preview-info__button Узнать подробнее
-      .preview-img
-        img(src="/images/preview.png" alt="Видеорегистратор")
+  include sections-header/section-menu
+
+  .header_bg-wrap
+    .container.container_m-auto
+      include sections-header/section-preview

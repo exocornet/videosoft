@@ -354,16 +354,22 @@ img {
   padding: 0 20px;
   margin: 0 auto;
 }
+.container_m-auto {
+  margin: auto;
+}
 
 /* -HEADER */
-.header {
+.header_bg-wrap {
   background: url("../images/bg_header.jpg");
+  margin-top: -100px;
   height: 100vh;
+  display: flex;
 }
 .header__wrapp-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .header a {
   color: #ffffff;
@@ -374,7 +380,8 @@ img {
 }
 .header__wrapp-preview {
   display: flex;
-  margin-top: 200px;
+  margin-top: 100px;
+  justify-content: space-between;
 }
 
 /* --Menu */

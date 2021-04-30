@@ -14,17 +14,27 @@ img {
   max-width: 1200px;
   padding: 0 20px;
   margin: 0 auto;
+
+  &_m-auto {
+    margin: auto;
+  }
 }
 
 /* -HEADER */
 .header {
-  background: url("../images/bg_header.jpg");
-  height: 100vh;
+
+  &_bg-wrap {
+    background: url("../images/bg_header.jpg");
+    margin-top: -100px;
+    height: 100vh;
+    display: flex;
+  }
 
   &__wrapp-link {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
 
   a {
@@ -38,7 +48,8 @@ img {
 
   &__wrapp-preview {
     display: flex;
-    margin-top: 200px;
+    margin-top: 100px;
+    justify-content: space-between;
   }
 }
 
