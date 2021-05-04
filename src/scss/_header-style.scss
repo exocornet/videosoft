@@ -1,0 +1,59 @@
+/* -HEADER */
+.header {
+
+  &_bg-wrap {
+    background: url("../images/bg_header.jpg");
+    margin-top: -100px;
+    height: 100vh;
+    display: flex;
+  }
+
+  &__wrapp-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+
+    &:hover {
+      color: #FF6263;
+    }
+  }
+}
+
+/* --Menu */
+.menu {
+  &__link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4em;
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+/* --Phone */
+.phone {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+
+  &__tel {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6em;
+  }
+
+  &__req-call {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2em;
+  }
+}

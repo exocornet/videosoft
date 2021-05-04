@@ -358,6 +358,69 @@ img {
   margin: auto;
 }
 
+/*КНОПКА*/
+.button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6em;
+  color: #ffffff;
+  background: #FF3E3F;
+  border: 0;
+  cursor: pointer;
+  padding: 20px 88px;
+}
+.button:hover {
+  background: #E52627;
+}
+.button:active {
+  background: #FF6263;
+}
+
+/*Стили наполнения блока*/
+.wrapp-preview {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapp-preview_header {
+  margin-top: 100px;
+}
+
+.preview-info {
+  color: #ffffff;
+  width: 50%;
+  z-index: 9;
+}
+.preview-info_demo-access {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.preview-info__heading {
+  font-style: normal;
+  font-weight: bold;
+  margin: 0 0 40px;
+}
+.preview-info__heading_h1 {
+  font-size: 6.4em;
+}
+.preview-info__heading_h2 {
+  font-size: 4em;
+  line-height: 1.6;
+}
+.preview-info__descript {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6em;
+  line-height: 1.8;
+  margin: 0 0 50px;
+}
+
+.preview-img {
+  width: 50%;
+  padding: 20px 0 20px 20px;
+}
+
 /* -HEADER */
 .header_bg-wrap {
   background: url("../images/bg_header.jpg");
@@ -377,11 +440,6 @@ img {
 }
 .header a:hover {
   color: #FF6263;
-}
-.header__wrapp-preview {
-  display: flex;
-  margin-top: 100px;
-  justify-content: space-between;
 }
 
 /* --Menu */
@@ -412,36 +470,21 @@ img {
   font-size: 1.2em;
 }
 
-.preview-info {
+.demo-access {
+  background: url("../images/bg_demo-access.jpg");
+  padding: 100px 0 100px;
+}
+
+.footer {
+  background: #000000;
+  padding: 30px 0;
+}
+.footer_text-layout {
+  text-align: center;
+}
+.footer__copy {
   color: #ffffff;
-  width: 50%;
-}
-.preview-info__heading {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 6.4em;
-  margin: 0 0 40px;
-}
-.preview-info__descript {
   font-style: normal;
   font-weight: 500;
-  font-size: 1.6em;
-  line-height: 1.8;
-  margin: 0 0 50px;
-}
-.preview-info__button {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 1.6em;
-  color: #ffffff;
-  background: #FF3E3F;
-  border: 0;
-  cursor: pointer;
-  padding: 20px 88px;
-}
-.preview-info__button:hover {
-  background: #E52627;
-}
-.preview-info__button:active {
-  background: #FF6263;
+  font-size: 1.2em;
 }

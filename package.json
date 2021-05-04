@@ -1,5 +1,5 @@
 {
-  "name": "avto-m-037",
+  "name": "videosoft",
   "version": "1.0.0",
   "description": "test",
   "main": "index.js",
@@ -556,7 +556,7 @@
   },
   "repository": "git+https://github.com/exocornet/avto-m-037.git",
   "bugs": {
-    "url": "https://github.com/exocornet/avto-m-037/issues"
+    "url": "https://github.com/exocornet/videosoft"
   },
-  "homepage": "https://github.com/exocornet/avto-m-037#readme"
+  "homepage": "https://github.com/exocornet/videosoft#readme"
 }
