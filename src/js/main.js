@@ -3,13 +3,15 @@
   'use strict';
 
     $('#imageGallery').lightSlider({
+      controls: false,
       gallery:true,
       item:1,
       loop:true,
-      thumbItem:9,
+      thumbItem:4,
       slideMargin:0,
+      thumbMargin:0,
       enableDrag: false,
-      currentPagerPosition:'left',
+      currentPagerPosition:'middle',
       onSliderLoad: function(el) {
         el.lightGallery({
           selector: '#imageGallery .lslide'
