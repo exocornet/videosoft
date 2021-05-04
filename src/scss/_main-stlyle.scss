@@ -1,3 +1,17 @@
+/*блок продукции*/
+.product {
+  display: flex;
+
+  &__img-preview {
+    width: 30%;
+  }
+
+  &__description {
+    width: 70%;
+  }
+}
+
+/*Демонстрационный блок*/
 .demo-access {
   background: url("../images/bg_demo-access.jpg");
   padding: 100px 0 100px;
@@ -11,6 +25,7 @@
   }
 }
 
+/*Блок формы и контактов*/
 .form {
   width: 50%;
 
