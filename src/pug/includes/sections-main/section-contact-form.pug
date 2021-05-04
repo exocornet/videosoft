@@ -1,3 +1,21 @@
-section
-  .container
-    .a Forma
+section.contact-form
+  .container.contact-form_wrap
+     .form
+      h2.form__heading Контакты
+      form.form__contain
+        input(type="text" placeholder="Имя").form__input
+        input(type="tel" placeholder="Телефон").form__input
+        input(type="email" placeholder="E-mail").form__input
+        button.form__button Заказать звонок
+
+     .contact
+      h3.contact__heading Прием заказов
+      a(href="tel:89997450122").contact__data.contact__data_phone 8 999 745 01 22
+      h3.contact__heading Приходите к нам
+      span.contact__data Москва, ул. Речная, 32
+      h3.contact__heading Юридическая информация
+      span.contact__data ОГРН: 1157746204230
+      span.contact__data ИНН: 7718099790
+      span.contact__data КПП: 771401001
+      span.contact__data Адрес: 127015, г. Москва, ул. Вятская, д. 35
+      span.contact__data Почтовый адрес: 125009, г. Москва, Никитский пер., 7

@@ -2,3 +2,98 @@
   background: url("../images/bg_demo-access.jpg");
   padding: 100px 0 100px;
 }
+
+.contact-form {
+  padding: 120px 0;
+
+  &_wrap {
+    display: flex;
+  }
+}
+
+.form {
+  width: 50%;
+
+  &__heading {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4rem;
+    margin: 0 0 80px 0;
+  }
+
+  &__contain {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  &__input {
+    font-size: 1.6rem;
+    border: 0;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 50px;
+    width: 360px;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &::placeholder {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.6rem;
+      color: #000000;
+      line-height: 20px;
+    }
+  }
+
+  &__button {
+    border: 1px solid #FF3E3F;
+    color: #FF3E3F;
+    background: #ffffff;
+    padding: 20px 95px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    cursor: pointer;
+
+    &:hover {
+      color: #ffffff;
+      background: #E52627;
+    }
+  }
+}
+
+.contact {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  &__heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 35px 0 15px 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__data {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #000000;
+
+    &_phone {
+      text-decoration: none;
+
+      &:hover {
+        color: #FF6263;
+      }
+    }
+  }
+}
