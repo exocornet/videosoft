@@ -42,7 +42,7 @@
     line-height: 1.8;
     color: #4E4E4E;
     padding-left: 25px;
-    margin: 0 0 35px 0;
+    margin: 0 0 45px 0;
   }
 
   &__down-specific {
@@ -104,7 +104,7 @@
     font-style: normal;
     font-weight: 800;
     font-size: 4rem;
-    margin: 0 0 80px 0;
+    margin: 0 0 85px 0;
   }
 
   &__contain {
@@ -117,7 +117,7 @@
     font-size: 1.6rem;
     border: 0;
     border-bottom: 1px solid #000000;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     width: 360px;
 
     &:focus {
@@ -128,7 +128,7 @@
       font-style: normal;
       font-weight: 500;
       font-size: 1.6rem;
-      color: #000000;
+      color: rgba(0, 0, 0, 0.5);
       line-height: 20px;
     }
   }
@@ -160,7 +160,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 3rem;
-    margin: 35px 0 15px 0;
+    margin: 40px 0 15px 0;
 
     &:first-child {
       margin-top: 0;
@@ -171,7 +171,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.7;
+    line-height: 1.9;
     color: #000000;
 
     &_phone {

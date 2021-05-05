@@ -32,7 +32,7 @@ img {
   background: #FF3E3F;
   border: 0;
   cursor: pointer;
-  padding: 20px 88px;
+  padding: 25px 88px;
   text-transform: uppercase;
 
   &:hover {
@@ -69,7 +69,6 @@ img {
   &__heading {
     font-style: normal;
     font-weight: bold;
-    margin: 0 0 40px;
 
     &_h1 {
       font-size: 6.4rem;
@@ -86,7 +85,7 @@ img {
     font-weight: 500;
     font-size: 1.6rem;
     line-height: 1.8;
-    margin: 0 0 50px;
+    margin: -15px 0 40px;
   }
 }
 

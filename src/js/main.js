@@ -15,7 +15,7 @@
       currentPagerPosition:'middle',
       onSliderLoad: function(el) {
         el.lightGallery({
-          selector: '#imageGallery .lslide'
+          selector: '#product1 .lslide'
         });
       }
     });
@@ -33,11 +33,47 @@
     currentPagerPosition:'middle',
     onSliderLoad: function(el) {
       el.lightGallery({
-        selector: '#imageGallery .lslide'
+        selector: '#product2 .lslide'
       });
     }
   });
 
+
+  $('#product_n').on('click', function (e) {
+
+    e.preventDefault();
+
+    var plansOffset = $('#product').offset().top;
+
+    $('html, body').animate({
+      scrollTop: plansOffset
+    }, 1000);
+
+  });
+
+  $('#demo_n').on('click', function (e) {
+
+    e.preventDefault();
+
+    var plansOffset = $('#demo').offset().top;
+
+    $('html, body').animate({
+      scrollTop: plansOffset
+    }, 1000);
+
+  });
+
+  $('#form_n').on('click', function (e) {
+
+    e.preventDefault();
+
+    var plansOffset = $('#form').offset().top;
+
+    $('html, body').animate({
+      scrollTop: plansOffset
+    }, 1000);
+
+  });
 
 
 })(jQuery);

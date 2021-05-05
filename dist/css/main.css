@@ -1580,7 +1580,7 @@ img {
   background: #FF3E3F;
   border: 0;
   cursor: pointer;
-  padding: 20px 88px;
+  padding: 25px 88px;
   text-transform: uppercase;
 }
 .button:hover {
@@ -1613,7 +1613,6 @@ img {
 .preview-info__heading {
   font-style: normal;
   font-weight: bold;
-  margin: 0 0 40px;
 }
 .preview-info__heading_h1 {
   font-size: 6.4rem;
@@ -1627,7 +1626,7 @@ img {
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 1.8;
-  margin: 0 0 50px;
+  margin: -15px 0 40px;
 }
 
 .preview-img {
@@ -1638,6 +1637,7 @@ img {
 /* -HEADER */
 .header_bg-wrap {
   background: url("../images/bg_header.jpg");
+  background-size: cover;
   margin-top: -100px;
   height: 100vh;
   display: flex;
@@ -1722,7 +1722,7 @@ img {
   line-height: 1.8;
   color: #4E4E4E;
   padding-left: 25px;
-  margin: 0 0 35px 0;
+  margin: 0 0 45px 0;
 }
 .product__down-specific {
   font-style: normal;
@@ -1778,7 +1778,7 @@ img {
   font-style: normal;
   font-weight: 800;
   font-size: 4rem;
-  margin: 0 0 80px 0;
+  margin: 0 0 85px 0;
 }
 .form__contain {
   display: flex;
@@ -1789,7 +1789,7 @@ img {
   font-size: 1.6rem;
   border: 0;
   border-bottom: 1px solid #000000;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
   width: 360px;
 }
 .form__input:focus {
@@ -1799,7 +1799,7 @@ img {
   font-style: normal;
   font-weight: 500;
   font-size: 1.6rem;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.5);
   line-height: 20px;
 }
 .form__button {
@@ -1827,7 +1827,7 @@ img {
   font-style: normal;
   font-weight: bold;
   font-size: 3rem;
-  margin: 35px 0 15px 0;
+  margin: 40px 0 15px 0;
 }
 .contact__heading:first-child {
   margin-top: 0;
@@ -1836,7 +1836,7 @@ img {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.9;
   color: #000000;
 }
 .contact__data_phone {
