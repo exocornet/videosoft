@@ -3,21 +3,42 @@
   display: flex;
   padding: 50px 0;
 
+  @media only screen and (max-width: 619px) {
+    flex-direction: column;
+  }
+
   &:first-child {
     margin-top: 100px;
+
+    @media only screen and (max-width: 939px) {
+      margin-top: 60px;
+    }
   }
 
   &:last-child {
     margin-bottom: 100px;
+
+    @media only screen and (max-width: 939px) {
+      margin-bottom: 60px;
+    }
   }
 
   &__img-preview {
     width: 35%;
     text-align: center;
+
+    @media only screen and (max-width: 619px) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
   }
 
   &__wrap-description {
     width: 65%;
+
+    @media only screen and (max-width: 619px) {
+      width: 100%;
+    }
   }
 
   &__heading {
@@ -25,6 +46,14 @@
     font-weight: bold;
     font-size: 3rem;
     margin: 0 0 20px 0;
+
+    @media only screen and (max-width: 939px) {
+      font-size: 2.4rem;
+    }
+
+    @media only screen and (max-width: 459px) {
+      font-size: 1.5rem;
+    }
   }
 
   &__desc {
@@ -33,6 +62,14 @@
     font-size: 1.6rem;
     line-height: 1.8;
     margin: 0 0 35px 0;
+
+    @media only screen and (max-width: 939px) {
+      font-size: 1.4rem;
+    }
+
+    @media only screen and (max-width: 459px) {
+      font-size: 1.3rem;
+    }
   }
 
   &__property-list {
@@ -43,6 +80,14 @@
     color: #4E4E4E;
     padding-left: 25px;
     margin: 0 0 45px 0;
+
+    @media only screen and (max-width: 939px) {
+      font-size: 1.4rem;
+    }
+
+    @media only screen and (max-width: 459px) {
+      font-size: 1.3rem;
+    }
   }
 
   &__down-specific {
@@ -54,6 +99,14 @@
     background: url("../images/ico-donwload.png") no-repeat;
     background-position: center left;
     padding-left: 25px;
+
+    @media only screen and (max-width: 939px) {
+      font-size: 1.4rem;
+    }
+
+    @media only screen and (max-width: 459px) {
+      font-size: 1.3rem;
+    }
   }
 }
 
@@ -88,23 +141,47 @@
   padding: 100px 0 100px;
 }
 
+
+/*Блок формы и контактов*/
 .contact-form {
   padding: 120px 0;
 
+  @media only screen and (max-width: 939px) {
+    padding: 70px 0;
+  }
+
   &_wrap {
     display: flex;
+
+    @media only screen and (max-width: 939px) {
+      flex-direction: column-reverse;
+      position: relative;
+    }
   }
 }
 
-/*Блок формы и контактов*/
 .form {
   width: 50%;
+
+  @media only screen and (max-width: 939px) {
+    width: 100%;
+  }
 
   &__heading {
     font-style: normal;
     font-weight: 800;
     font-size: 4rem;
     margin: 0 0 85px 0;
+
+    @media only screen and (max-width: 939px) {
+      font-size: 3rem;
+      position: absolute;
+      top: 0;
+    }
+
+    @media only screen and (max-width: 459px) {
+      font-size: 2rem;
+    }
   }
 
   &__contain {
@@ -120,6 +197,15 @@
     margin-bottom: 55px;
     width: 360px;
 
+    @media only screen and (max-width: 939px) {
+      font-size: 1.4rem;
+      width: 300px;
+    }
+
+    @media only screen and (max-width: 459px) {
+      font-size: 1.3rem;
+    }
+
     &:focus {
       outline: 0;
     }
@@ -130,6 +216,14 @@
       font-size: 1.6rem;
       color: rgba(0, 0, 0, 0.5);
       line-height: 20px;
+
+      @media only screen and (max-width: 939px) {
+        font-size: 1.4rem;
+      }
+
+      @media only screen and (max-width: 459px) {
+        font-size: 1.3rem;
+      }
     }
   }
 
@@ -144,6 +238,15 @@
     font-size: 1.6rem;
     cursor: pointer;
 
+    @media only screen and (max-width: 939px) {
+      font-size: 1.4rem;
+      padding: 20px 75px;
+    }
+
+    @media only screen and (max-width: 459px) {
+      font-size: 1.3rem;
+    }
+
     &:hover {
       color: #ffffff;
       background: #E52627;
@@ -156,11 +259,25 @@
   display: flex;
   flex-direction: column;
 
+  @media only screen and (max-width: 939px) {
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+
   &__heading {
     font-style: normal;
     font-weight: bold;
     font-size: 3rem;
     margin: 40px 0 15px 0;
+
+    @media only screen and (max-width: 939px) {
+      font-size: 2.4rem;
+    }
+
+    @media only screen and (max-width: 459px) {
+      font-size: 1.5rem;
+    }
 
     &:first-child {
       margin-top: 0;
@@ -173,6 +290,14 @@
     font-size: 16px;
     line-height: 1.9;
     color: #000000;
+
+    @media only screen and (max-width: 939px) {
+      font-size: 1.4rem;
+    }
+
+    @media only screen and (max-width: 459px) {
+      font-size: 1.3rem;
+    }
 
     &_phone {
       text-decoration: none;

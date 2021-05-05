@@ -7,6 +7,10 @@
     margin-top: -100px;
     height: 100vh;
     display: flex;
+
+    @media only screen and (max-width: 939px) {
+      height: 100%;
+    }
   }
 
   &__wrapp-link {
@@ -26,8 +30,18 @@
   }
 }
 
+.logo {
+  @media only screen and (max-width: 939px) {
+    width: 140px;
+  }
+}
+
 /* --Menu */
 .menu {
+  @media only screen and (max-width: 939px) {
+    display: none;
+  }
+
   &__link {
     font-style: normal;
     font-weight: 600;
@@ -46,15 +60,27 @@
   flex-direction: column;
   text-align: right;
 
+  @media only screen and (max-width: 459px) {
+    display: none;
+  }
+
   &__tel {
     font-style: normal;
     font-weight: 700;
     font-size: 1.6rem;
+
+    @media only screen and (max-width: 939px) {
+      font-size: 1.4rem;
+    }
   }
 
   &__req-call {
     font-style: normal;
     font-weight: 500;
     font-size: 1.2rem;
+
+    @media only screen and (max-width: 939px) {
+      font-size: 1rem;
+    }
   }
 }

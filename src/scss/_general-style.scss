@@ -18,6 +18,23 @@ img {
   padding: 0 20px;
   margin: 0 auto;
 
+  @media only screen and (max-width: 1023px) {
+    max-width: 940px;
+    padding: 0 10px;
+  }
+
+  @media only screen and (max-width: 939px) {
+    max-width: 620px;
+  }
+
+  @media only screen and (max-width: 619px) {
+    max-width: 460px;
+  }
+
+  @media only screen and (max-width: 459px) {
+    max-width: 320px;
+  }
+
   &_m-auto {
     margin: auto;
   }
@@ -35,6 +52,15 @@ img {
   padding: 25px 88px;
   text-transform: uppercase;
 
+  @media only screen and (max-width: 939px) {
+    font-size: 1.4rem;
+    padding: 20px 70px;
+  }
+
+  @media only screen and (max-width: 459px) {
+    font-size: 1.3rem;
+  }
+
   &:hover {
     background: #E52627;
   }
@@ -43,6 +69,7 @@ img {
     background: #FF6263;
   }
 }
+
 
 /*Стили наполнения блока*/
 .wrapp-preview {
@@ -59,6 +86,10 @@ img {
   width: 50%;
   z-index: 9;
 
+  @media only screen and (max-width: 1023px) {
+    width: 100%;
+  }
+
   &_demo-access {
     display: flex;
     flex-direction: column;
@@ -72,11 +103,27 @@ img {
 
     &_h1 {
       font-size: 6.4rem;
+
+      @media only screen and (max-width: 939px) {
+        font-size: 4.2rem;
+      }
+
+      @media only screen and (max-width: 459px) {
+        font-size: 2.4rem;
+      }
     }
 
     &_h2 {
       font-size: 4rem;
       line-height: 1.6;
+
+      @media only screen and (max-width: 939px) {
+        font-size: 3rem;
+      }
+
+      @media only screen and (max-width: 459px) {
+        font-size: 2rem;
+      }
     }
   }
 
@@ -86,10 +133,22 @@ img {
     font-size: 1.6rem;
     line-height: 1.8;
     margin: -15px 0 40px;
+
+    @media only screen and (max-width: 939px) {
+      font-size: 1.4rem;
+    }
+
+    @media only screen and (max-width: 459px) {
+      font-size: 1.3rem;
+    }
   }
 }
 
 .preview-img {
   width: 50%;
   padding: 20px 0 20px 20px;
+
+  @media only screen and (max-width: 1023px) {
+    display: none;
+  }
 }

@@ -1567,6 +1567,27 @@ img {
   padding: 0 20px;
   margin: 0 auto;
 }
+@media only screen and (max-width: 1023px) {
+  .container {
+    max-width: 940px;
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 939px) {
+  .container {
+    max-width: 620px;
+  }
+}
+@media only screen and (max-width: 619px) {
+  .container {
+    max-width: 460px;
+  }
+}
+@media only screen and (max-width: 459px) {
+  .container {
+    max-width: 320px;
+  }
+}
 .container_m-auto {
   margin: auto;
 }
@@ -1582,6 +1603,17 @@ img {
   cursor: pointer;
   padding: 25px 88px;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 939px) {
+  .button {
+    font-size: 1.4rem;
+    padding: 20px 70px;
+  }
+}
+@media only screen and (max-width: 459px) {
+  .button {
+    font-size: 1.3rem;
+  }
 }
 .button:hover {
   background: #E52627;
@@ -1604,6 +1636,11 @@ img {
   width: 50%;
   z-index: 9;
 }
+@media only screen and (max-width: 1023px) {
+  .preview-info {
+    width: 100%;
+  }
+}
 .preview-info_demo-access {
   display: flex;
   flex-direction: column;
@@ -1617,9 +1654,29 @@ img {
 .preview-info__heading_h1 {
   font-size: 6.4rem;
 }
+@media only screen and (max-width: 939px) {
+  .preview-info__heading_h1 {
+    font-size: 4.2rem;
+  }
+}
+@media only screen and (max-width: 459px) {
+  .preview-info__heading_h1 {
+    font-size: 2.4rem;
+  }
+}
 .preview-info__heading_h2 {
   font-size: 4rem;
   line-height: 1.6;
+}
+@media only screen and (max-width: 939px) {
+  .preview-info__heading_h2 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 459px) {
+  .preview-info__heading_h2 {
+    font-size: 2rem;
+  }
 }
 .preview-info__descript {
   font-style: normal;
@@ -1628,10 +1685,25 @@ img {
   line-height: 1.8;
   margin: -15px 0 40px;
 }
+@media only screen and (max-width: 939px) {
+  .preview-info__descript {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 459px) {
+  .preview-info__descript {
+    font-size: 1.3rem;
+  }
+}
 
 .preview-img {
   width: 50%;
   padding: 20px 0 20px 20px;
+}
+@media only screen and (max-width: 1023px) {
+  .preview-img {
+    display: none;
+  }
 }
 
 /* -HEADER */
@@ -1641,6 +1713,11 @@ img {
   margin-top: -100px;
   height: 100vh;
   display: flex;
+}
+@media only screen and (max-width: 939px) {
+  .header_bg-wrap {
+    height: 100%;
+  }
 }
 .header__wrapp-link {
   display: flex;
@@ -1656,7 +1733,18 @@ img {
   color: #FF6263;
 }
 
+@media only screen and (max-width: 939px) {
+  .logo {
+    width: 140px;
+  }
+}
+
 /* --Menu */
+@media only screen and (max-width: 939px) {
+  .menu {
+    display: none;
+  }
+}
 .menu__link {
   font-style: normal;
   font-weight: 600;
@@ -1673,15 +1761,30 @@ img {
   flex-direction: column;
   text-align: right;
 }
+@media only screen and (max-width: 459px) {
+  .phone {
+    display: none;
+  }
+}
 .phone__tel {
   font-style: normal;
   font-weight: 700;
   font-size: 1.6rem;
 }
+@media only screen and (max-width: 939px) {
+  .phone__tel {
+    font-size: 1.4rem;
+  }
+}
 .phone__req-call {
   font-style: normal;
   font-weight: 500;
   font-size: 1.2rem;
+}
+@media only screen and (max-width: 939px) {
+  .phone__req-call {
+    font-size: 1rem;
+  }
 }
 
 /*блок продукции*/
@@ -1689,18 +1792,44 @@ img {
   display: flex;
   padding: 50px 0;
 }
+@media only screen and (max-width: 619px) {
+  .product {
+    flex-direction: column;
+  }
+}
 .product:first-child {
   margin-top: 100px;
 }
+@media only screen and (max-width: 939px) {
+  .product:first-child {
+    margin-top: 60px;
+  }
+}
 .product:last-child {
   margin-bottom: 100px;
+}
+@media only screen and (max-width: 939px) {
+  .product:last-child {
+    margin-bottom: 60px;
+  }
 }
 .product__img-preview {
   width: 35%;
   text-align: center;
 }
+@media only screen and (max-width: 619px) {
+  .product__img-preview {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
 .product__wrap-description {
   width: 65%;
+}
+@media only screen and (max-width: 619px) {
+  .product__wrap-description {
+    width: 100%;
+  }
 }
 .product__heading {
   font-style: normal;
@@ -1708,12 +1837,32 @@ img {
   font-size: 3rem;
   margin: 0 0 20px 0;
 }
+@media only screen and (max-width: 939px) {
+  .product__heading {
+    font-size: 2.4rem;
+  }
+}
+@media only screen and (max-width: 459px) {
+  .product__heading {
+    font-size: 1.5rem;
+  }
+}
 .product__desc {
   font-style: normal;
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 1.8;
   margin: 0 0 35px 0;
+}
+@media only screen and (max-width: 939px) {
+  .product__desc {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 459px) {
+  .product__desc {
+    font-size: 1.3rem;
+  }
 }
 .product__property-list {
   font-style: normal;
@@ -1724,6 +1873,16 @@ img {
   padding-left: 25px;
   margin: 0 0 45px 0;
 }
+@media only screen and (max-width: 939px) {
+  .product__property-list {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 459px) {
+  .product__property-list {
+    font-size: 1.3rem;
+  }
+}
 .product__down-specific {
   font-style: normal;
   font-weight: bold;
@@ -1733,6 +1892,16 @@ img {
   background: url("../images/ico-donwload.png") no-repeat;
   background-position: center left;
   padding-left: 25px;
+}
+@media only screen and (max-width: 939px) {
+  .product__down-specific {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 459px) {
+  .product__down-specific {
+    font-size: 1.3rem;
+  }
 }
 
 .lSSlideOuter .lSPager.lSGallery {
@@ -1763,22 +1932,50 @@ img {
   padding: 100px 0 100px;
 }
 
+/*Блок формы и контактов*/
 .contact-form {
   padding: 120px 0;
+}
+@media only screen and (max-width: 939px) {
+  .contact-form {
+    padding: 70px 0;
+  }
 }
 .contact-form_wrap {
   display: flex;
 }
+@media only screen and (max-width: 939px) {
+  .contact-form_wrap {
+    flex-direction: column-reverse;
+    position: relative;
+  }
+}
 
-/*Блок формы и контактов*/
 .form {
   width: 50%;
+}
+@media only screen and (max-width: 939px) {
+  .form {
+    width: 100%;
+  }
 }
 .form__heading {
   font-style: normal;
   font-weight: 800;
   font-size: 4rem;
   margin: 0 0 85px 0;
+}
+@media only screen and (max-width: 939px) {
+  .form__heading {
+    font-size: 3rem;
+    position: absolute;
+    top: 0;
+  }
+}
+@media only screen and (max-width: 459px) {
+  .form__heading {
+    font-size: 2rem;
+  }
 }
 .form__contain {
   display: flex;
@@ -1792,6 +1989,17 @@ img {
   margin-bottom: 55px;
   width: 360px;
 }
+@media only screen and (max-width: 939px) {
+  .form__input {
+    font-size: 1.4rem;
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 459px) {
+  .form__input {
+    font-size: 1.3rem;
+  }
+}
 .form__input:focus {
   outline: 0;
 }
@@ -1801,6 +2009,16 @@ img {
   font-size: 1.6rem;
   color: rgba(0, 0, 0, 0.5);
   line-height: 20px;
+}
+@media only screen and (max-width: 939px) {
+  .form__input::placeholder {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 459px) {
+  .form__input::placeholder {
+    font-size: 1.3rem;
+  }
 }
 .form__button {
   border: 1px solid #FF3E3F;
@@ -1813,6 +2031,17 @@ img {
   font-size: 1.6rem;
   cursor: pointer;
 }
+@media only screen and (max-width: 939px) {
+  .form__button {
+    font-size: 1.4rem;
+    padding: 20px 75px;
+  }
+}
+@media only screen and (max-width: 459px) {
+  .form__button {
+    font-size: 1.3rem;
+  }
+}
 .form__button:hover {
   color: #ffffff;
   background: #E52627;
@@ -1823,11 +2052,28 @@ img {
   display: flex;
   flex-direction: column;
 }
+@media only screen and (max-width: 939px) {
+  .contact {
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+}
 .contact__heading {
   font-style: normal;
   font-weight: bold;
   font-size: 3rem;
   margin: 40px 0 15px 0;
+}
+@media only screen and (max-width: 939px) {
+  .contact__heading {
+    font-size: 2.4rem;
+  }
+}
+@media only screen and (max-width: 459px) {
+  .contact__heading {
+    font-size: 1.5rem;
+  }
 }
 .contact__heading:first-child {
   margin-top: 0;
@@ -1838,6 +2084,16 @@ img {
   font-size: 16px;
   line-height: 1.9;
   color: #000000;
+}
+@media only screen and (max-width: 939px) {
+  .contact__data {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 459px) {
+  .contact__data {
+    font-size: 1.3rem;
+  }
 }
 .contact__data_phone {
   text-decoration: none;
