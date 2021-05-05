@@ -133,6 +133,7 @@
     transition: border-radius 0.12s linear 0s 0.35s linear 0s;
 }
 .lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {
+
     border-radius: 5px;
 }
 .lSSlideOuter .lSPager.lSGallery img {
@@ -1686,12 +1687,74 @@ img {
 /*блок продукции*/
 .product {
   display: flex;
+  padding: 50px 0;
+}
+.product:first-child {
+  margin-top: 100px;
+}
+.product:last-child {
+  margin-bottom: 100px;
 }
 .product__img-preview {
-  width: 30%;
+  width: 35%;
+  text-align: center;
 }
-.product__description {
-  width: 70%;
+.product__wrap-description {
+  width: 65%;
+}
+.product__heading {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 0 0 20px 0;
+}
+.product__desc {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  margin: 0 0 35px 0;
+}
+.product__property-list {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #4E4E4E;
+  padding-left: 25px;
+  margin: 0 0 35px 0;
+}
+.product__down-specific {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #000000;
+  text-decoration: none;
+  background: url("../images/ico-donwload.png") no-repeat;
+  background-position: center left;
+  padding-left: 25px;
+}
+
+.lSSlideOuter .lSPager.lSGallery {
+  display: flex;
+  justify-content: center;
+}
+
+.lSSlideOuter .lSPager.lSGallery li {
+  width: 7% !important;
+  margin-right: 10px !important;
+  padding: 5px 15px;
+}
+.lSSlideOuter .lSPager.lSGallery li:last-child {
+  margin-right: 0 !important;
+}
+.lSSlideOuter .lSPager.lSGallery li.active {
+  border: 1px solid rgba(118, 118, 118, 0.5);
+  border-radius: 2px;
+}
+
+.lSSlideOuter .lSPager.lSGallery img {
+  display: inline-block;
 }
 
 /*Демонстрационный блок*/
