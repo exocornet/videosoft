@@ -1,4 +1,12 @@
 /*блок продукции*/
+.production {
+  padding: 100px 0;
+
+  @media only screen and (max-width: 939px) {
+    padding: 60px 0;
+  }
+}
+
 .product {
   display: flex;
   padding: 50px 0;
@@ -8,18 +16,21 @@
   }
 
   &:first-child {
-    margin-top: 100px;
+    margin-bottom: 50px;
+    background: url("../images/bg_substrate1.png") no-repeat;
+    background-position: right;
 
     @media only screen and (max-width: 939px) {
-      margin-top: 60px;
+      background: none;
     }
   }
 
   &:last-child {
-    margin-bottom: 100px;
+    background: url("../images/bg_substrate2.png") no-repeat;
+    background-position: right;
 
     @media only screen and (max-width: 939px) {
-      margin-bottom: 60px;
+      background: none;
     }
   }
 

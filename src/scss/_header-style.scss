@@ -18,6 +18,10 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+
+    @media only screen and (max-width: 939px) {
+      justify-content: start;
+    }
   }
 
   a {
@@ -60,6 +64,11 @@
   flex-direction: column;
   text-align: right;
 
+  @media only screen and (max-width: 939px) {
+    margin-left: auto;
+    margin-right: 60px;
+  }
+
   @media only screen and (max-width: 459px) {
     display: none;
   }
@@ -83,4 +92,103 @@
       font-size: 1rem;
     }
   }
+}
+
+
+/*Кнопка меню гамбургер*/
+.menu-hamburger {
+  display: none;
+
+  @media only screen and (max-width: 459px) {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 939px) {
+  .menu-hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+  }
+  .menu-hamburger__icon {
+    position: relative;
+    width: 21px;
+    height: 4px;
+    background: #ffffff;
+    border: 0;
+  }
+  .menu-hamburger__icon:focus {
+    outline: 0;
+  }
+  .menu-hamburger__icon:before {
+    position: absolute;
+    left: 0;
+    top: -8px;
+    content: "";
+    display: block;
+    width: 21px;
+    height: 4px;
+    background: #ffffff;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+  .menu-hamburger__icon:after {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    content: "";
+    display: block;
+    width: 21px;
+    height: 4px;
+    background: #ffffff;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+
+  .menu-hamburger__icon.menu-hamburger__icon_active {
+    background: transparent;
+  }
+  .menu-hamburger__icon.menu-hamburger__icon_active:before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
+  .menu-hamburger__icon.menu-hamburger__icon_active:after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
+}
+
+
+.block-click-hamburger_margin {
+  margin-bottom: 42px;
+}
+.block-click-hamburger_margin:last-child {
+  margin-bottom: 0;
+}
+.menu_active {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: rgba(0, 0, 0, 0.85);
+  border: none;
+  position: absolute;
+  top: 95px;
+  padding: 50px 0 110px;
+  box-sizing: border-box;
+  width: 100%;
+  z-index: 10;
+}
+.block-click-hamburger_wrap {
+  max-width: 375px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+.block-click-hamburger a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.block-click-hamburger a:hover {
+  color: #00923F;
 }
