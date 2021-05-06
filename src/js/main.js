@@ -2,6 +2,7 @@
 
   'use strict';
 
+    //Слайдер с галереей
     $('#product1').lightSlider({
       galleryMargin: 30,
       controls: false,
@@ -38,10 +39,14 @@
     }
   });
 
-
+  //Прокрутка плавная
   $('#product_n').on('click', function (e) {
 
     e.preventDefault();
+
+    document.querySelector('.menu-hamburger__icon').classList.toggle('menu-hamburger__icon_active');
+    document.querySelector('.menu').classList.toggle('menu_active');
+    document.querySelector('.film').classList.toggle('film_active');
 
     var plansOffset = $('#product').offset().top;
 
@@ -55,6 +60,10 @@
 
     e.preventDefault();
 
+    document.querySelector('.menu-hamburger__icon').classList.toggle('menu-hamburger__icon_active');
+    document.querySelector('.menu').classList.toggle('menu_active');
+    document.querySelector('.film').classList.toggle('film_active');
+
     var plansOffset = $('#demo').offset().top;
 
     $('html, body').animate({
@@ -67,6 +76,10 @@
 
     e.preventDefault();
 
+    document.querySelector('.menu-hamburger__icon').classList.toggle('menu-hamburger__icon_active');
+    document.querySelector('.menu').classList.toggle('menu_active');
+    document.querySelector('.film').classList.toggle('film_active');
+
     var plansOffset = $('#form').offset().top;
 
     $('html, body').animate({
@@ -75,10 +88,17 @@
 
   });
 
-
-  document.querySelector('.menu-hamburger').onclick = function () {
+  //Работа гамбургера меню
+  document.querySelector('.menu-hamburger').addEventListener('click', function () {
     document.querySelector('.menu-hamburger__icon').classList.toggle('menu-hamburger__icon_active');
     document.querySelector('.menu').classList.toggle('menu_active');
-  }
+    document.querySelector('.film').classList.toggle('film_active');
+  });
+
+  document.querySelector('.film').addEventListener('click', function () {
+    document.querySelector('.menu-hamburger__icon').classList.toggle('menu-hamburger__icon_active');
+    document.querySelector('.menu').classList.toggle('menu_active');
+    document.querySelector('.film').classList.toggle('film_active');
+  });
 
 })(jQuery);

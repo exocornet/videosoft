@@ -1639,6 +1639,7 @@ img {
 @media only screen and (max-width: 1023px) {
   .preview-info {
     width: 100%;
+    margin: 60px 0 75px 0;
   }
 }
 .preview-info_demo-access {
@@ -1714,7 +1715,7 @@ img {
   height: 100vh;
   display: flex;
 }
-@media only screen and (max-width: 939px) {
+@media only screen and (max-width: 1023px) {
   .header_bg-wrap {
     height: 100%;
   }
@@ -1756,8 +1757,20 @@ img {
   font-size: 1.4rem;
   margin-right: 50px;
 }
+@media only screen and (max-width: 939px) {
+  .menu__link {
+    margin-right: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+}
 .menu__link:last-child {
   margin-right: 0;
+}
+@media only screen and (max-width: 939px) {
+  .menu__link:last-child {
+    margin-right: 20px;
+  }
 }
 
 /* --Phone */
@@ -1814,6 +1827,7 @@ img {
     justify-content: center;
     align-items: center;
     height: 20px;
+    z-index: 11;
   }
 
   .menu-hamburger__icon {
@@ -1868,42 +1882,27 @@ img {
     transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
   }
 }
-.block-click-hamburger_margin {
-  margin-bottom: 42px;
-}
-
-.block-click-hamburger_margin:last-child {
-  margin-bottom: 0;
-}
-
 .menu_active {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  background: rgba(0, 0, 0, 0.85);
-  border: none;
   position: absolute;
   top: 95px;
-  padding: 50px 0 110px;
-  box-sizing: border-box;
+  right: 0;
+  z-index: 11;
+}
+
+.film {
+  display: none;
+}
+.film_active {
+  display: block;
+  background: rgba(0, 0, 0, 0.85);
+  position: fixed;
   width: 100%;
+  height: 100%;
   z-index: 10;
-}
-
-.block-click-hamburger_wrap {
-  max-width: 375px;
-  margin: 0 auto;
-  list-style: none;
-  padding: 0;
-}
-
-.block-click-hamburger a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.block-click-hamburger a:hover {
-  color: #00923F;
+  top: 0;
 }
 
 /*блок продукции*/
