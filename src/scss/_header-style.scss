@@ -45,6 +45,20 @@
 .menu {
   @media only screen and (max-width: 939px) {
     display: none;
+
+    &_active {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      position: absolute;
+      top: 95px;
+      right: 0;
+      z-index: 11;
+
+      @media only screen and (max-width: 459px) {
+        top: 145px;
+      }
+    }
   }
 
   &__link {
@@ -82,6 +96,15 @@
 
   @media only screen and (max-width: 459px) {
     display: none;
+
+    &_active {
+      display: flex;
+      position: absolute;
+      right: 0;
+      top: 95px;
+      margin-right: 20px;
+      z-index: 11;
+    }
   }
 
   &__tel {
@@ -101,6 +124,10 @@
 
     @media only screen and (max-width: 939px) {
       font-size: 1rem;
+    }
+
+    @media only screen and (max-width: 459px) {
+      font-size: 1.2rem;
     }
   }
 }
@@ -129,6 +156,8 @@
     height: 4px;
     background: #ffffff;
     border: 0;
+    border-radius: 0;
+    outline: 0;
   }
   .menu-hamburger__icon:focus {
     outline: 0;
@@ -172,17 +201,6 @@
 }
 
 @media only screen and (max-width: 939px) {
-  .menu_active {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    //background: rgba(0, 0, 0, 0.85);
-    position: absolute;
-    top: 95px;
-    right: 0;
-    z-index: 11;
-  }
-
   .film {
     display: none;
 

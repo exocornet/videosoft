@@ -9,7 +9,8 @@
 
 .product {
   display: flex;
-  padding: 50px 0;
+  padding: 50px 15px;
+  border: 1px solid rgba(118, 118, 118, 0.2);
 
   @media only screen and (max-width: 619px) {
     flex-direction: column;
@@ -216,6 +217,7 @@
 
     @media only screen and (max-width: 459px) {
       font-size: 1.3rem;
+      width: 100%;
     }
 
     &:focus {
@@ -243,25 +245,34 @@
     border: 1px solid #FF3E3F;
     color: #FF3E3F;
     background: #ffffff;
-    padding: 20px 95px;
+    padding: 25px 0;
+    width: 360px;
     text-transform: uppercase;
     font-style: normal;
     font-weight: bold;
     font-size: 1.6rem;
     cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0 0 30px rgba(255, 62, 63, 0.25);
 
     @media only screen and (max-width: 939px) {
       font-size: 1.4rem;
-      padding: 20px 75px;
+      padding: 20px 0;
+      width: 300px;
     }
 
     @media only screen and (max-width: 459px) {
       font-size: 1.3rem;
+      width: 100%;
     }
 
     &:hover {
       color: #ffffff;
       background: #E52627;
+    }
+
+    &:active {
+      background: #FF6263;
     }
   }
 }

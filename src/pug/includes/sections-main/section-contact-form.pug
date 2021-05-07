@@ -3,9 +3,9 @@ section.contact-form#form
      .form
       h2.form__heading Контакты
       form(action="./mail.php" method="post").form__contain
-        input(type="text" placeholder="Имя" name="name").form__input
-        input(type="tel" placeholder="Телефон" name="phone").form__input
-        input(type="email" placeholder="E-mail" name="email").form__input
+        input(type="text" placeholder="Имя" name="name" required).form__input
+        input(type="tel" placeholder="Телефон" name="phone" required).form__input
+        input(type="email" placeholder="E-mail" name="email" required).form__input
         button.form__button Заказать звонок
 
      .contact

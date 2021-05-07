@@ -9,7 +9,7 @@
     <header class="header">
       <section class="header__wrapp-link container"><a class="logo" href="/"><img src="/images/logo.jpg" alt="Логотип компании"></a>
         <nav class="menu"><a class="menu__link" href="#product" id="product_n">Видеорегистраторы</a><a class="menu__link" href="#demo" id="demo_n">Videosoft platform</a><a class="menu__link" href="#form" id="form_n">Контакты</a></nav>
-        <div class="phone"><a class="phone__tel" href="tel:89997450122">8 999 745 01 22</a><a class="phone__req-call" href="#">Заказать звонок</a></div>
+        <div class="phone"><a class="phone__tel" href="tel:89997450122">8 999 745 01 22</a><a class="phone__req-call" href="#form" id="form-call">Заказать звонок</a></div>
         <div class="menu-hamburger">
           <button class="menu-hamburger__icon"></button>
         </div>
@@ -20,7 +20,7 @@
             <div class="preview-info">
               <h1 class="preview-info__heading preview-info__heading_h1">Цифровизация полевых сотрудников</h1>
               <p class="preview-info__descript">Видеософт - это профессиональная RND российская компания, занимающаяся разработкой программно-аппаратных решений с использованием искусственного интеллекта для систем безопасности общественного порядка и коммерческих заказчиков.</p>
-              <button class="button">Узнать подробнее</button>
+              <button class="button" id="btn-scroll-demo">Узнать подробнее</button>
             </div>
             <div class="preview-img"><img src="/images/preview.png" alt="Видеорегистратор"></div>
           </section>
@@ -87,9 +87,9 @@
           <div class="form">
             <h2 class="form__heading">Контакты</h2>
             <form class="form__contain" action="./mail.php" method="post">
-              <input class="form__input" type="text" placeholder="Имя" name="name">
-              <input class="form__input" type="tel" placeholder="Телефон" name="phone">
-              <input class="form__input" type="email" placeholder="E-mail" name="email">
+              <input class="form__input" type="text" placeholder="Имя" name="name" required>
+              <input class="form__input" type="tel" placeholder="Телефон" name="phone" required>
+              <input class="form__input" type="email" placeholder="E-mail" name="email" required>
               <button class="form__button">Заказать звонок</button>
             </form>
           </div>
