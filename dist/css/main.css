@@ -1684,6 +1684,8 @@ img {
 @media only screen and (max-width: 459px) {
   .preview-info__heading_h2 {
     font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
   }
 }
 .preview-info__descript {
@@ -1691,7 +1693,7 @@ img {
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 1.8;
-  margin: -15px 0 40px;
+  margin: -15px 0 30px;
 }
 @media only screen and (max-width: 939px) {
   .preview-info__descript {
@@ -1945,7 +1947,7 @@ img {
 .product {
   display: flex;
   padding: 50px 15px;
-  border: 1px solid rgba(118, 118, 118, 0.2);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
 }
 @media only screen and (max-width: 619px) {
   .product {
@@ -1956,6 +1958,7 @@ img {
   margin-bottom: 50px;
   background: url("../images/bg_substrate1.png") no-repeat;
   background-position: right;
+  background-size: contain;
 }
 @media only screen and (max-width: 939px) {
   .product:first-child {
@@ -1965,6 +1968,7 @@ img {
 .product:last-child {
   background: url("../images/bg_substrate2.png") no-repeat;
   background-position: right;
+  background-size: contain;
 }
 @media only screen and (max-width: 939px) {
   .product:last-child {
@@ -2048,7 +2052,7 @@ img {
   color: #000000;
   text-decoration: none;
   background: url("../images/ico-donwload.png") no-repeat;
-  background-position: center left;
+  background-position: left center;
   padding-left: 25px;
 }
 @media only screen and (max-width: 939px) {
@@ -2060,6 +2064,9 @@ img {
   .product__down-specific {
     font-size: 1.3rem;
   }
+}
+.product__down-specific:hover {
+  color: #ff3e3f;
 }
 
 .lSSlideOuter .lSPager.lSGallery {
@@ -2087,8 +2094,16 @@ img {
 /*Демонстрационный блок*/
 .demo-access {
   background: url("../images/bg_demo-access.jpg");
-  padding: 100px 0 100px;
+  padding: 100px 0;
   background-size: cover;
+}
+@media only screen and (max-width: 459px) {
+  .demo-access {
+    padding: 85px 0;
+  }
+}
+.demo-access .preview-info {
+  margin: 0;
 }
 
 /*Блок формы и контактов*/
@@ -2192,7 +2207,6 @@ img {
   font-size: 1.6rem;
   cursor: pointer;
   border-radius: 2px;
-  box-shadow: 0 0 30px rgba(255, 62, 63, 0.25);
 }
 @media only screen and (max-width: 939px) {
   .form__button {
